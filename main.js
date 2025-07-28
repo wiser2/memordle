@@ -1,29 +1,38 @@
-var boardState = [
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""]
-]
-
 var currentBoardi = 0;
 var currentRow = 0;
 var currentCell = 0;
 
 var currentBoard = document.getElementById('board-l');
 
-const answers = ['LEMON', 'APPLE', 'SHOOT']
-
+const answers = ['LEMON', 'APPLE', 'SHOOT'];
+var boardsSolved = [false, false, false];
 
 
 function isAlpha(c) {
     return /^[a-zA-Z]$/.test(c);
 }
 
+function arraysEqual(arr1, arr2) {
+    if (arr1.length != arr2.length) {
+        return false;
+    }
+    for (var i = 0; i < arr1.length; i++) {
+        if (arr1[i] != arr2[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
 function nextBoard() {
+    currentCell = 0;
+    
     currentBoardi = (currentBoardi + 1) % 3;
+    if (boardsSolved[currentBoardi]) {
+        nextBoard();
+    }
+
+    
     if (currentBoardi == 0) {
         currentBoard = document.getElementById('board-l');
     } else if (currentBoardi == 1) {
@@ -89,6 +98,37 @@ function generateBoards() {
     currentBoard = document.getElementById('board-l');
 }
 
+function enterPressed() {
+    currentCell = 0;
+
+    var guess = ['', '', '', '', ''];
+    for (i = 0; i < 5; i++) {
+        guess[i] = currentBoard.children[currentRow].children[i].innerHTML;
+    }
+
+    var result = checkGuess(guess, answers[currentBoardi]);
+    for (i = 0; i < 5; i++) {
+        currentBoard.children[currentRow].children[i].style.backgroundColor = result[i];
+    }
+
+    if (arraysEqual(result, ['green', 'green', 'green', 'green', 'green'])) {
+        boardsSolved[currentBoardi] = true;
+        if (boardsSolved[0] && boardsSolved[1] && boardsSolved[2]) {
+            alert('win');
+        }
+    }
+
+    nextBoard();
+
+    if (currentBoardi == 0) {
+        currentRow++;
+    }
+
+    if (currentRow == 7) {
+        alert('lose');
+    }
+}
+
 function checkGuess(guess, answer) {
     var guessList = [...guess];
     var answerList = answer.split('');
@@ -129,25 +169,7 @@ function keyboardPress(e) {
         }
     } else if (c == 'ENTER') {
         if (currentCell == 5) {
-            var guess = ['', '', '', '', ''];
-            for (i = 0; i < 5; i++) {
-                guess[i] = currentBoard.children[currentRow].children[i].innerHTML;
-            }
-
-            var result = checkGuess(guess, answers[currentBoardi]);
-            for (i = 0; i < 5; i++) {
-                currentBoard.children[currentRow].children[i].style.backgroundColor = result[i];
-            }
-            currentCell = 0;
-            nextBoard();
-
-            if (currentBoardi == 0) {
-                currentRow++;
-            }
-
-            if (currentRow == 7) {
-                alert('lose');
-            }
+            enterPressed();
         }
     }
 }
