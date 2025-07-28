@@ -26,6 +26,9 @@ function arraysEqual(arr1, arr2) {
 
 function nextBoard() {
     currentCell = 0;
+    if (currentBoardi == 2) {
+        currentRow++;
+    }
     
     currentBoardi = (currentBoardi + 1) % 3;
     if (boardsSolved[currentBoardi]) {
@@ -99,8 +102,6 @@ function generateBoards() {
 }
 
 function enterPressed() {
-    currentCell = 0;
-
     var guess = ['', '', '', '', ''];
     for (i = 0; i < 5; i++) {
         guess[i] = currentBoard.children[currentRow].children[i].innerHTML;
@@ -119,10 +120,6 @@ function enterPressed() {
     }
 
     nextBoard();
-
-    if (currentBoardi == 0) {
-        currentRow++;
-    }
 
     if (currentRow == 7) {
         alert('lose');
