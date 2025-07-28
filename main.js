@@ -16,6 +16,8 @@ var currentBoard = document.getElementById('board-l');
 
 const answers = ['LEMON', 'APPLE', 'SHOOT']
 
+
+
 function isAlpha(c) {
     return /^[a-zA-Z]$/.test(c);
 }
@@ -29,6 +31,16 @@ function nextBoard() {
     } else {
         currentBoard = document.getElementById('board-r');
     }
+}
+
+function filterWordList(arr) {
+    var filtered = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i].length == 5) {
+            filtered.push(arr[i]);
+        }
+    }
+    return filtered;
 }
 
 function getBoardState(boardId) {
