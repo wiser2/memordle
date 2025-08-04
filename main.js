@@ -1,3 +1,9 @@
+import { dict as fullDict} from './wordlist/dictionary.js';
+import { targets as fullTargets} from './wordlist/targets.js';
+
+var dict;
+var targets;
+
 var currentBoardi = 0;
 var currentRow = 0;
 var currentCell = 0;
@@ -55,17 +61,6 @@ function filterWordList(arr) {
     return filtered;
 }
 
-function getBoardState(boardId) {
-    var board = document.getElementById(boardId);
-    for (var i = 0; i < 7; i++) {
-        for (var j = 0; j < 5; j++) {
-            boardState[i][j] = board.children[i].children[j].innerHTML;
-        }
-    }
-    return boardState;
-}
-
-
 function generateBoardHTML(containerId) {
     var boardContainerContainer = document.getElementById('board-container-container');
     var boardContainer = document.getElementById(containerId);
@@ -101,14 +96,31 @@ function generateBoards() {
     currentBoard = document.getElementById('board-l');
 }
 
+function initWordlists() {
+    dict = filterWordList(fullDict);
+    targets = filterWordList(fullTargets);
+
+    console.log(dict)
+}
+
+function isGuessValid(guess) {
+    let guessStr = guess.join('').toLowerCase();
+    return dict.includes(guessStr);
+}
+
 function enterPressed() {
     var guess = ['', '', '', '', ''];
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         guess[i] = currentBoard.children[currentRow].children[i].innerHTML;
     }
 
+    console.log(isGuessValid(guess));
+    if (!isGuessValid(guess)) {
+        return;
+    }
+
     var result = checkGuess(guess, answers[currentBoardi]);
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         currentBoard.children[currentRow].children[i].style.backgroundColor = result[i];
     }
 
@@ -132,7 +144,7 @@ function checkGuess(guess, answer) {
     var result = ['grey', 'grey', 'grey', 'grey', 'grey'];
 
     // green
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         if (guessList[i] == answerList[i]) {
             result[i] = 'green';
             guessList[i] = '-';
@@ -141,7 +153,7 @@ function checkGuess(guess, answer) {
     }
 
     // yellow
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         if (answerList.includes(guessList[i])) {
             result[i] = 'yellow';
             guessList[i] = '-';
@@ -173,6 +185,7 @@ function keyboardPress(e) {
 
 window.onload = function() {
     generateBoards();
+    initWordlists();
 }
 
 window.onkeydown = keyboardPress

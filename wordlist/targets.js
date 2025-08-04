@@ -1,4 +1,4 @@
-targets = [
+export const targets = [
   "that",
   "with",
   "this",

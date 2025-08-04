@@ -1,4 +1,4 @@
-dict = [
+export const dict = [
   "aa",
   "aah",
   "aahed",
