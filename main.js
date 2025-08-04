@@ -10,7 +10,7 @@ var currentCell = 0;
 
 var currentBoard = document.getElementById('board-l');
 
-const answers = ['LEMON', 'APPLE', 'SHOOT'];
+var answers = ['LEMON', 'APPLE', 'SHOOT'];
 var boardsSolved = [false, false, false];
 
 var memoMillis = 3000;
@@ -61,7 +61,7 @@ function filterWordList(arr) {
     var filtered = [];
     for (var i = 0; i < arr.length; i++) {
         if (arr[i].length == 5) {
-            filtered.push(arr[i]);
+            filtered.push(arr[i].toLowerCase());
         }
     }
     return filtered;
@@ -102,11 +102,17 @@ function generateBoards() {
     currentBoard = document.getElementById('board-l');
 }
 
+function generateAnswers() {
+    for (let i = 0; i < 3; i++) {
+        answers[i] = targets[Math.floor(Math.random() * targets.length)];
+    }
+
+    console.log(answers);
+}
+
 function initWordlists() {
     dict = filterWordList(fullDict);
     targets = filterWordList(fullTargets);
-
-    console.log(dict)
 }
 
 function isGuessValid(guess) {
@@ -117,15 +123,15 @@ function isGuessValid(guess) {
 function enterPressed() {
     var guess = ['', '', '', '', ''];
     for (let i = 0; i < 5; i++) {
-        guess[i] = currentBoard.children[currentRow].children[i].innerHTML;
+        guess[i] = currentBoard.children[currentRow].children[i].innerHTML.toLowerCase();
     }
 
-    console.log(isGuessValid(guess));
     if (!isGuessValid(guess)) {
         return;
     }
 
     var result = checkGuess(guess, answers[currentBoardi]);
+    console.log(result);
     for (let i = 0; i < 5; i++) {
         currentBoard.children[currentRow].children[i].style.backgroundColor = result[i];
     }
@@ -185,18 +191,18 @@ function queueHideHints(boardi, rowi, ms) {
 }
 
 function keyboardPress(e) {
-    const c = e.key.toUpperCase();
+    const c = e.key.toLowerCase();
     if (isAlpha(c)) {
         if (currentCell < 5) {
-            currentBoard.children[currentRow].children[currentCell].innerHTML = c;
+            currentBoard.children[currentRow].children[currentCell].innerHTML = c.toUpperCase();
             currentCell++;
         }
-    } else if (c == 'BACKSPACE') {
+    } else if (c == 'backspace') {
         if (currentCell > 0) {
             currentBoard.children[currentRow].children[currentCell - 1].innerHTML = ' ';
             currentCell--;
         }
-    } else if (c == 'ENTER') {
+    } else if (c == 'enter') {
         if (currentCell == 5) {
             enterPressed();
         }
@@ -206,6 +212,7 @@ function keyboardPress(e) {
 window.onload = function() {
     generateBoards();
     initWordlists();
+    generateAnswers();
 }
 
 window.onkeydown = keyboardPress

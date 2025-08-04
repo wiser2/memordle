@@ -258,7 +258,6 @@ export const targets = [
   "word",
   "kind",
   "open",
-  "*****",
   "able",
   "money",
   "experience",
@@ -356,7 +355,7 @@ export const targets = [
   "science",
   "return",
   "practice",
-  "*****",
+  
   "role",
   "management",
   "toward",
@@ -374,13 +373,13 @@ export const targets = [
   "ground",
   "main",
   "paper",
-  "*****",
+  
   "modern",
   "moment",
   "situation",
   "turn",
   "plan",
-  "*****",
+  
   "******",
   "movement",
   "private",
@@ -433,7 +432,7 @@ export const targets = [
   "taking",
   "wife",
   "object",
-  "*****",
+  
   "twenty",
   "committee",
   "range",
@@ -697,7 +696,7 @@ export const targets = [
   "ready",
   "occur",
   "forward",
-  "*****",
+  
   "construction",
   "minister",
   "useful",
@@ -755,7 +754,7 @@ export const targets = [
   "iron",
   "failure",
   "concept",
-  "*****",
+  
   "getting",
   "pattern",
   "phase",
@@ -931,7 +930,7 @@ export const targets = [
   "portion",
   "machine",
   "search",
-  "*****",
+  
   "definition",
   "powerful",
   "governor",
@@ -961,7 +960,7 @@ export const targets = [
   "correct",
   "stay",
   "perfect",
-  "*****",
+  
   "leaving",
   "accept",
   "******",
@@ -1135,7 +1134,7 @@ export const targets = [
   "silver",
   "democratic",
   "straight",
-  "*****",
+  
   "choose",
   "fundamental",
   "beauty",
@@ -1190,7 +1189,7 @@ export const targets = [
   "chosen",
   "evaluation",
   "seeing",
-  "*****",
+  
   "mission",
   "drawing",
   "significance",
@@ -1613,7 +1612,7 @@ export const targets = [
   "sand",
   "sweet",
   "victory",
-  "*****",
+  
   "drink",
   "younger",
   "decide",
@@ -1653,7 +1652,7 @@ export const targets = [
   "conscious",
   "framework",
   "strike",
-  "*****",
+  
   "narrative",
   "skill",
   "ocean",
@@ -1719,7 +1718,7 @@ export const targets = [
   "sudden",
   "telling",
   "employee",
-  "*****",
+  
   "specifically",
   "screen",
   "diameter",
@@ -1834,7 +1833,7 @@ export const targets = [
   "consent",
   "vital",
   "altogether",
-  "*****",
+  
   "coffee",
   "nervous",
   "abstract",
@@ -1870,12 +1869,12 @@ export const targets = [
   "boundary",
   "threat",
   "membrane",
-  "*****",
+  
   "meat",
   "**************",
   "realize",
   "magnetic",
-  "*****",
+  
   "transportation",
   "unfortunately",
   "integration",
@@ -2186,7 +2185,7 @@ export const targets = [
   "desert",
   "alliance",
   "seldom",
-  "*****",
+  
   "correlation",
   "miller",
   "accuracy",
@@ -2200,7 +2199,7 @@ export const targets = [
   "totally",
   "expenditure",
   "currently",
-  "*****",
+  
   "servant",
   "storm",
   "expensive",
@@ -2215,7 +2214,7 @@ export const targets = [
   "match",
   "hath",
   "beat",
-  "*****",
+  
   "hydrogen",
   "crop",
   "cook",
@@ -2274,7 +2273,7 @@ export const targets = [
   "sheep",
   "orientation",
   "reducing",
-  "*****",
+  
   "conviction",
   "suggestion",
   "assist",
@@ -2365,7 +2364,7 @@ export const targets = [
   "lawyer",
   "somehow",
   "genuine",
-  "*****",
+  
   "proud",
   "comfortable",
   "rear",
@@ -4134,7 +4133,7 @@ export const targets = [
   "casting",
   "dominion",
   "angular",
-  "*****",
+  
   "intend",
   "monarchy",
   "hurry",
@@ -4163,7 +4162,7 @@ export const targets = [
   "react",
   "presidency",
   "indifferent",
-  "*****",
+  
   "surprisingly",
   "snake",
   "substrate",
@@ -4386,7 +4385,7 @@ export const targets = [
   "compatible",
   "obstruction",
   "upright",
-  "*****",
+  
   "facial",
   "minimize",
   "transit",
@@ -4557,7 +4556,7 @@ export const targets = [
   "cone",
   "sweat",
   "compassion",
-  "*****",
+  
   "monsieur",
   "prevalent",
   "appoint",
@@ -5329,7 +5328,7 @@ export const targets = [
   "insure",
   "enlargement",
   "diminish",
-  "*****",
+  
   "furious",
   "gracious",
   "sterile",
@@ -5358,7 +5357,7 @@ export const targets = [
   "nutritional",
   "exquisite",
   "aboriginal",
-  "*****",
+  
   "sexually",
   "strand",
   "supportive",
@@ -5400,7 +5399,7 @@ export const targets = [
   "sincerity",
   "hastily",
   "dissolve",
-  "*****",
+  
   "fulfillment",
   "virtuous",
   "franchise",
@@ -5526,7 +5525,7 @@ export const targets = [
   "lever",
   "economical",
   "swear",
-  "*****",
+  
   "evaporation",
   "definitive",
   "procure",
@@ -5568,7 +5567,7 @@ export const targets = [
   "stain",
   "spacing",
   "specificity",
-  "*****",
+  
   "disappearance",
   "corrosion",
   "conductivity",
@@ -5715,7 +5714,7 @@ export const targets = [
   "worm",
   "radar",
   "hearted",
-  "*****",
+  
   "practicable",
   "amplifier",
   "shine",
@@ -5726,7 +5725,7 @@ export const targets = [
   "verification",
   "pierce",
   "backing",
-  "*****",
+  
   "chapman",
   "delicious",
   "prognosis",
@@ -5740,7 +5739,7 @@ export const targets = [
   "hymn",
   "slain",
   "tolerate",
-  "*****",
+  
   "dispose",
   "steamer",
   "abandonment",
@@ -5763,7 +5762,7 @@ export const targets = [
   "canoe",
   "banner",
   "copying",
-  "*****",
+  
   "sensibility",
   "traumatic",
   "coral",
@@ -5844,7 +5843,7 @@ export const targets = [
   "pyramid",
   "gigantic",
   "messiah",
-  "*****",
+  
   "exotic",
   "cultivate",
   "spontaneously",
@@ -6045,7 +6044,7 @@ export const targets = [
   "bulb",
   "antique",
   "ballet",
-  "*****",
+  
   "sentimental",
   "sanitary",
   "ordination",
@@ -6204,7 +6203,7 @@ export const targets = [
   "inertia",
   "pigment",
   "optimization",
-  "*****",
+  
   "recorder",
   "disciplinary",
   "impedance",
@@ -6300,7 +6299,7 @@ export const targets = [
   "empress",
   "confer",
   "queer",
-  "*****",
+  
   "optimism",
   "troop",
   "replication",
@@ -6416,7 +6415,7 @@ export const targets = [
   "stabilization",
   "supposition",
   "curvature",
-  "*****",
+  
   "gloom",
   "vulnerability",
   "flap",
@@ -6453,7 +6452,7 @@ export const targets = [
   "oracle",
   "swinging",
   "unification",
-  "*****",
+  
   "censorship",
   "chimney",
   "tore",
@@ -6538,7 +6537,7 @@ export const targets = [
   "excavation",
   "brake",
   "fetch",
-  "*****",
+  
   "analog",
   "inversion",
   "auction",
@@ -6908,7 +6907,7 @@ export const targets = [
   "vent",
   "******",
   "typing",
-  "*****",
+  
   "aggregation",
   "dissociation",
   "aluminium",
@@ -7121,7 +7120,7 @@ export const targets = [
   "browser",
   "chromatography",
   "epilepsy",
-  "*****",
+  
   "constituency",
   "colonialism",
   "eruption",
@@ -7202,7 +7201,7 @@ export const targets = [
   "guise",
   "transmitter",
   "************",
-  "*****",
+  
   "palate",
   "infarction",
   "payroll",
@@ -7445,7 +7444,7 @@ export const targets = [
   "acetic",
   "bilingual",
   "embryonic",
-  "*****",
+  
   "hydroxide",
   "turmoil",
   "grape",
@@ -7483,7 +7482,7 @@ export const targets = [
   "hemoglobin",
   "workman",
   "honorary",
-  "*****",
+  
   "recognizable",
   "cocoa",
   "corrective",
@@ -7501,7 +7500,7 @@ export const targets = [
   "cache",
   "horizontally",
   "warranty",
-  "*****",
+  
   "antecedent",
   "pronoun",
   "revive",
@@ -7563,7 +7562,7 @@ export const targets = [
   "deem",
   "absurdity",
   "****",
-  "*****",
+  
   "treachery",
   "eclipse",
   "beacon",
@@ -7583,7 +7582,7 @@ export const targets = [
   "mechanically",
   "infrequently",
   "lifelong",
-  "*****",
+  
   "excursion",
   "communicative",
   "traveler",
@@ -7613,7 +7612,7 @@ export const targets = [
   "appellant",
   "drunken",
   "reciprocity",
-  "*****",
+  
   "vase",
   "emphatically",
   "concave",
@@ -7762,7 +7761,7 @@ export const targets = [
   "prerequisite",
   "cutter",
   "parlor",
-  "*****",
+  
   "ransom",
   "strenuous",
   "relativity",
@@ -7788,7 +7787,7 @@ export const targets = [
   "teen",
   "repay",
   "artificially",
-  "*****",
+  
   "equivalence",
   "********",
   "movable",
@@ -8108,11 +8107,11 @@ export const targets = [
   "jewel",
   "infamous",
   "betrayal",
-  "*****",
+  
   "hither",
   "lament",
   "arrogant",
-  "*****",
+  
   "postage",
   "genetically",
   "dictator",
@@ -8327,7 +8326,7 @@ export const targets = [
   "juncture",
   "cleansing",
   "**********",
-  "*****",
+  
   "incredibly",
   "discord",
   "respectfully",
@@ -8574,7 +8573,7 @@ export const targets = [
   "authentication",
   "portray",
   "motherhood",
-  "*****",
+  
   "programmer",
   "bedding",
   "invariant",
@@ -8625,11 +8624,11 @@ export const targets = [
   "dipole",
   "stadium",
   "congenial",
-  "*****",
+  
   "ambivalence",
   "marijuana",
   "embody",
-  "*****",
+  
   "qualifying",
   "emulsion",
   "servitude",
@@ -8928,7 +8927,7 @@ export const targets = [
   "*********",
   "suburb",
   "clearness",
-  "*****",
+  
   "multiplier",
   "cove",
   "pavilion",
@@ -8964,7 +8963,7 @@ export const targets = [
   "gleaming",
   "courtroom",
   "seam",
-  "*****",
+  
   "fluctuation",
   "dispensation",
   "issuer",
@@ -9165,7 +9164,7 @@ export const targets = [
   "merging",
   "mischievous",
   "outrageous",
-  "*****",
+  
   "embark",
   "adventurous",
   "olfactory",
@@ -9293,7 +9292,7 @@ export const targets = [
   "auditorium",
   "provocation",
   "mandible",
-  "*****",
+  
   "figurative",
   "hurrying",
   "petrol",
@@ -9513,7 +9512,7 @@ export const targets = [
   "neolithic",
   "subconscious",
   "idealistic",
-  "*****",
+  
   "mica",
   "scalar",
   "farthest",
@@ -9579,7 +9578,7 @@ export const targets = [
   "lagoon",
   "brilliance",
   "cohesive",
-  "*****",
+  
   "vanguard",
   "excerpt",
   "cinnamon",
@@ -10203,7 +10202,7 @@ export const targets = [
   "paranoid",
   "endlessly",
   "acetone",
-  "*****",
+  
   "scandalous",
   "animate",
   "adept",
@@ -10669,7 +10668,7 @@ export const targets = [
   "benefactor",
   "acidosis",
   "cytochrome",
-  "*****",
+  
   "intelligently",
   "erecting",
   "denunciation",
@@ -11066,7 +11065,7 @@ export const targets = [
   "imam",
   "unwarranted",
   "tenacity",
-  "*****",
+  
   "conventionally",
   "phosphatase",
   "seduction",
@@ -11120,7 +11119,7 @@ export const targets = [
   "oasis",
   "tartar",
   "parenthood",
-  "*****",
+  
   "tuberculous",
   "normalization",
   "memoranda",
@@ -11285,7 +11284,7 @@ export const targets = [
   "worldview",
   "*******",
   "connotation",
-  "*****",
+  
   "histamine",
   "shoreline",
   "incarnate",
@@ -11480,7 +11479,7 @@ export const targets = [
   "gallantry",
   "omnipotent",
   "intractable",
-  "*****",
+  
   "carcass",
   "indulgent",
   "monies",
@@ -12182,7 +12181,7 @@ export const targets = [
   "situate",
   "interpretative",
   "foothold",
-  "*****",
+  
   "penitentiary",
   "adiabatic",
   "deteriorate",
@@ -13007,7 +13006,7 @@ export const targets = [
   "allege",
   "pathophysiology",
   "summoning",
-  "*****",
+  
   "horseshoe",
   "rebound",
   "desist",
@@ -13108,7 +13107,7 @@ export const targets = [
   "sunflower",
   "shroud",
   "seashore",
-  "*****",
+  
   "hickory",
   "pharmacist",
   "braid",
@@ -13278,7 +13277,7 @@ export const targets = [
   "dilation",
   "snout",
   "reverie",
-  "*****",
+  
   "sportsman",
   "courting",
   "twinkling",
@@ -13288,7 +13287,7 @@ export const targets = [
   "milestone",
   "dowager",
   "periodicity",
-  "*****",
+  
   "trop",
   "minimization",
   "supersede",
@@ -13541,7 +13540,7 @@ export const targets = [
   "cinematic",
   "unjustified",
   "selector",
-  "*****",
+  
   "booking",
   "craftsmanship",
   "moiety",
@@ -13764,7 +13763,7 @@ export const targets = [
   "lacquer",
   "pigmentation",
   "bereft",
-  "*****",
+  
   "extortion",
   "homeostasis",
   "juniper",
@@ -14352,7 +14351,7 @@ export const targets = [
   "rampart",
   "earner",
   "satanic",
-  "*****",
+  
   "voicing",
   "cranium",
   "commonsense",
@@ -14379,7 +14378,7 @@ export const targets = [
   "easement",
   "mesozoic",
   "distributional",
-  "*****",
+  
   "bandit",
   "crudely",
   "attache",
@@ -14397,7 +14396,7 @@ export const targets = [
   "controllable",
   "*******",
   "heyday",
-  "*****",
+  
   "distinctiveness",
   "moderne",
   "declination",
@@ -14578,7 +14577,7 @@ export const targets = [
   "hammock",
   "chimpanzee",
   "philological",
-  "*****",
+  
   "payload",
   "cliche",
   "lipstick",
@@ -14672,7 +14671,7 @@ export const targets = [
   "nonresident",
   "preferentially",
   "inviolable",
-  "*****",
+  
   "fractal",
   "nook",
   "irresistibly",
@@ -15139,7 +15138,7 @@ export const targets = [
   "nutmeg",
   "bunting",
   "nihil",
-  "*****",
+  
   "radiography",
   "desorption",
   "blackish",
@@ -15263,7 +15262,7 @@ export const targets = [
   "occupier",
   "merle",
   "unplanned",
-  "*****",
+  
   "classically",
   "append",
   "citric",
@@ -15471,7 +15470,7 @@ export const targets = [
   "dada",
   "pate",
   "moveable",
-  "*****",
+  
   "consumerism",
   "subclavian",
   "adornment",
@@ -16155,7 +16154,7 @@ export const targets = [
   "dominique",
   "acorn",
   "mimetic",
-  "*****",
+  
   "stealth",
   "arras",
   "splice",
@@ -16713,7 +16712,7 @@ export const targets = [
   "carrion",
   "nonconformist",
   "harpsichord",
-  "*****",
+  
   "rebate",
   "predispose",
   "rectilinear",
@@ -16797,11 +16796,11 @@ export const targets = [
   "dyslexia",
   "cither",
   "barricade",
-  "*****",
+  
   "geochemical",
   "schoolteacher",
   "mercuric",
-  "*****",
+  
   "bedchamber",
   "shrew",
   "pericarditis",
@@ -16856,12 +16855,12 @@ export const targets = [
   "rococo",
   "streetcar",
   "quack",
-  "*****",
+  
   "inbreeding",
   "manufactory",
   "redrawn",
   "zooplankton",
-  "*****",
+  
   "equipping",
   "penultimate",
   "atrophic",
@@ -16971,7 +16970,7 @@ export const targets = [
   "acquit",
   "booze",
   "clitoris",
-  "*****",
+  
   "suffocation",
   "infertile",
   "inductor",
@@ -16981,7 +16980,7 @@ export const targets = [
   "gauntlet",
   "****",
   "rodeo",
-  "*****",
+  
   "proliferate",
   "evangelistic",
   "tannin",
@@ -17023,9 +17022,9 @@ export const targets = [
   "scold",
   "knower",
   "mermaid",
-  "*****",
+  
   "lacrimal",
-  "*****",
+  
   "inhumanity",
   "episcopate",
   "ortho",
@@ -17057,7 +17056,7 @@ export const targets = [
   "tetrachloride",
   "presidio",
   "divan",
-  "*****",
+  
   "motorist",
   "dropsy",
   "impressionism",
@@ -17072,7 +17071,7 @@ export const targets = [
   "flogging",
   "vulgate",
   "universalist",
-  "*****",
+  
   "mana",
   "paramilitary",
   "bureaucrat",
@@ -17096,7 +17095,7 @@ export const targets = [
   "banjo",
   "glint",
   "fluently",
-  "*****",
+  
   "demented",
   "corticosteroid",
   "phloem",
@@ -17111,7 +17110,7 @@ export const targets = [
   "indemnification",
   "****",
   "******",
-  "*****",
+  
   "patchy",
   "agate",
   "asexual",
@@ -17154,7 +17153,7 @@ export const targets = [
   "exudation",
   "superintend",
   "smog",
-  "*****",
+  
   "cobbler",
   "oratorio",
   "meniscus",
@@ -17176,7 +17175,7 @@ export const targets = [
   "needlework",
   "indiscreet",
   "offline",
-  "*****",
+  
   "voracious",
   "dilate",
   "abstention",
@@ -17265,7 +17264,7 @@ export const targets = [
   "overhang",
   "perversity",
   "shrapnel",
-  "*****",
+  
   "mower",
   "microbiological",
   "speculator",
@@ -17341,7 +17340,7 @@ export const targets = [
   "widget",
   "****",
   "osmosis",
-  "*****",
+  
   "mooring",
   "campos",
   "shred",
@@ -17376,7 +17375,7 @@ export const targets = [
   "homily",
   "unscathed",
   "incubate",
-  "*****",
+  
   "underpinnings",
   "dejection",
   "expiation",
@@ -17388,7 +17387,7 @@ export const targets = [
   "talisman",
   "yore",
   "neurosurgery",
-  "*****",
+  
   "dore",
   "mindset",
   "falsification",
@@ -17445,7 +17444,7 @@ export const targets = [
   "purana",
   "statist",
   "tracery",
-  "*****",
+  
   "nudity",
   "unionization",
   "frolic",
@@ -17455,14 +17454,14 @@ export const targets = [
   "portentous",
   "stealthily",
   "wouldst",
-  "*****",
+  
   "fanon",
   "isomer",
   "beaucoup",
   "ectoderm",
   "industrialist",
   "mesial",
-  "*****",
+  
   "unreported",
   "asthmatic",
   "epicurean",
@@ -17522,7 +17521,7 @@ export const targets = [
   "gipsy",
   "hardworking",
   "tepid",
-  "*****",
+  
   "rehabilitate",
   "hearken",
   "nullification",
@@ -17942,7 +17941,7 @@ export const targets = [
   "biotin",
   "humic",
   "parse",
-  "*****",
+  
   "equilibration",
   "ionosphere",
   "nonsensical",
@@ -18322,7 +18321,7 @@ export const targets = [
   "mesentery",
   "adrenalin",
   "scrip",
-  "*****",
+  
   "distantly",
   "vagal",
   "brag",
@@ -18977,7 +18976,7 @@ export const targets = [
   "subnormal",
   "unattached",
   "handheld",
-  "*****",
+  
   "civics",
   "necker",
   "doggedly",
@@ -19699,9 +19698,9 @@ export const targets = [
   "crass",
   "rivulet",
   "ravel",
-  "*****",
+  
   "satyr",
-  "*****",
+  
   "pounce",
   "betook",
   "embed",
@@ -19878,7 +19877,7 @@ export const targets = [
   "yarrow",
   "surreal",
   "fluidized",
-  "*****",
+  
   "cynically",
   "undistinguished",
   "cashmere",
@@ -22183,7 +22182,7 @@ export const targets = [
   "unlabeled",
   "retake",
   "hermaphrodite",
-  "*****",
+  
   "feminization",
   "intrapsychic",
   "fairyland",
@@ -22975,7 +22974,7 @@ export const targets = [
   "offeror",
   "empathize",
   "metonymy",
-  "*****",
+  
   "cytoskeleton",
   "coeval",
   "soulless",
@@ -23230,7 +23229,7 @@ export const targets = [
   "immutability",
   "lassie",
   "motivator",
-  "*****",
+  
   "blume",
   "forger",
   "intermixture",
@@ -23380,7 +23379,7 @@ export const targets = [
   "supplanting",
   "hunk",
   "covariates",
-  "*****",
+  
   "sedulously",
   "nominalism",
   "pleader",
@@ -28074,7 +28073,7 @@ export const targets = [
   "nala",
   "listlessness",
   "actinomyces",
-  "*****",
+  
   "guardsman",
   "brunet",
   "dalles",
@@ -29187,7 +29186,7 @@ export const targets = [
   "ammoniac",
   "pharos",
   "discursively",
-  "*****",
+  
   "changeful",
   "dumbly",
   "unpredictably",
@@ -29582,7 +29581,7 @@ export const targets = [
   "protoxide",
   "multiuser",
   "cannonball",
-  "*****",
+  
   "scission",
   "puke",
   "demodulation",
@@ -30017,7 +30016,7 @@ export const targets = [
   "motorboat",
   "emulsifier",
   "ingrowth",
-  "*****",
+  
   "rance",
   "ovulatory",
   "oscillograph",
@@ -30908,7 +30907,7 @@ export const targets = [
   "vectorial",
   "intitled",
   "straggle",
-  "*****",
+  
   "pinball",
   "hematological",
   "hetman",
@@ -31953,7 +31952,7 @@ export const targets = [
   "descant",
   "dockside",
   "servitor",
-  "*****",
+  
   "enfold",
   "sophism",
   "reconnoitering",
@@ -33934,7 +33933,7 @@ export const targets = [
   "khanate",
   "retrievable",
   "guilder",
-  "*****",
+  
   "teary",
   "infantilism",
   "gerbil",
@@ -35477,7 +35476,7 @@ export const targets = [
   "rigger",
   "pabulum",
   "ceiba",
-  "*****",
+  
   "octanol",
   "yond",
   "premalignant",
@@ -37466,7 +37465,7 @@ export const targets = [
   "belabor",
   "synostosis",
   "merganser",
-  "*****",
+  
   "errantry",
   "dolman",
   "narwhal",
