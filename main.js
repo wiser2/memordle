@@ -13,6 +13,8 @@ var currentBoard = document.getElementById('board-l');
 const answers = ['LEMON', 'APPLE', 'SHOOT'];
 var boardsSolved = [false, false, false];
 
+var memoMillis = 3000;
+
 
 function isAlpha(c) {
     return /^[a-zA-Z]$/.test(c);
@@ -42,12 +44,16 @@ function nextBoard() {
     }
 
     
-    if (currentBoardi == 0) {
-        currentBoard = document.getElementById('board-l');
-    } else if (currentBoardi == 1) {
-        currentBoard = document.getElementById('board-m');
+    currentBoard = getBoard(currentBoardi);
+}
+
+function getBoard(i) {
+    if (i == 0) {
+        return document.getElementById('board-l');
+    } else if (i == 1) {
+        return document.getElementById('board-m');
     } else {
-        currentBoard = document.getElementById('board-r');
+        return document.getElementById('board-r');
     }
 }
 
@@ -131,6 +137,8 @@ function enterPressed() {
         }
     }
 
+    
+    queueHideHints(currentBoardi, currentRow, memoMillis);
     nextBoard();
 
     if (currentRow == 7) {
@@ -162,6 +170,18 @@ function checkGuess(guess, answer) {
     }
 
     return result;
+}
+
+function hideHints(boardi, rowi) {
+    for (let i = 0; i < 5; i++) {
+        getBoard(boardi).children[rowi].children[i].style.backgroundColor = 'black';
+    }
+}
+
+function queueHideHints(boardi, rowi, ms) {
+    setTimeout(function() {
+        hideHints(boardi, rowi);
+    }, ms);
 }
 
 function keyboardPress(e) {
