@@ -50,7 +50,7 @@ function updateBoardIndicators() {
         } else if (i == currentBoardi) {
             document.getElementsByClassName('board-indicator')[i].innerHTML = "↓";
         } else {
-            document.getElementsByClassName('board-indicator')[i].innerHTML = "—";
+            document.getElementsByClassName('board-indicator')[i].innerHTML = " ";
         }
     }
 }
@@ -127,7 +127,7 @@ function generateBoards() {
     currentBoard = document.getElementById('board-l');
 
     for (let i = 0; i < 3; i++) {
-        document.getElementsByClassName('board-indicator')[i].innerHTML = ".";
+        document.getElementsByClassName('board-indicator')[i].innerHTML = " ";
     }
 }
 
