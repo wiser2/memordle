@@ -1,1 +1,1 @@
-[play](wiser2.github.io/memordle)
+[play](https://wiser2.github.io/memordle)
