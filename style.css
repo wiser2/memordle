@@ -28,9 +28,30 @@
 .board-container {
     justify-content: center;
     margin: 0 1vw;
+    text-align: center;
 }
 
 .board-container-container {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.timer {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.board-indicator {
+    font-size: 1.5em;
+    height: 1.5em;
+}
+
+.board-indicator-container {
     display: flex;
     justify-content: center;
 }

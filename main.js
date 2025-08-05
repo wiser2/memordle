@@ -12,6 +12,9 @@ var currentBoard = document.getElementById('board-l');
 
 var answers = ['LEMON', 'APPLE', 'SHOOT'];
 var boardsSolved = [false, false, false];
+var boardsLost = [false, false, false];
+
+var finished = false;
 
 var memoMillis = 3000;
 
@@ -32,6 +35,20 @@ function arraysEqual(arr1, arr2) {
     return true;
 }
 
+function updateBoardIndicators() {
+    for (let i = 0; i < 3; i++) {
+        if (boardsSolved[i]){
+            document.getElementsByClassName('board-indicator')[i].innerHTML = "✓";
+        } else if (boardsLost[i]) {
+            document.getElementsByClassName('board-indicator')[i].innerHTML = "X";
+        } else if (i == currentBoardi) {
+            document.getElementsByClassName('board-indicator')[i].innerHTML = "↓";
+        } else {
+            document.getElementsByClassName('board-indicator')[i].innerHTML = "—";
+        }
+    }
+}
+
 function nextBoard() {
     currentCell = 0;
     if (currentBoardi == 2) {
@@ -45,6 +62,8 @@ function nextBoard() {
 
     
     currentBoard = getBoard(currentBoardi);
+
+    updateBoardIndicators();
 }
 
 function getBoard(i) {
@@ -100,6 +119,10 @@ function generateBoards() {
     generateBoardHTML('board-container-m');
     generateBoardHTML('board-container-r');
     currentBoard = document.getElementById('board-l');
+
+    for (let i = 0; i < 3; i++) {
+        document.getElementsByClassName('board-indicator')[i].innerHTML = ".";
+    }
 }
 
 function generateAnswers() {
@@ -120,6 +143,39 @@ function isGuessValid(guess) {
     return dict.includes(guessStr);
 }
 
+function unhideAllHints() {
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 7; j++) {
+            if (getBoard(i).children[j].children[0].innerHTML == ' ') {
+                continue;
+            }
+
+            var guess = ['', '', '', '', ''];
+            for (let k = 0; k < 5; k++) {
+                guess[k] = getBoard(i).children[j].children[k].innerHTML.toLowerCase();
+            }
+
+            var result = checkGuess(guess, answers[i]);
+
+            for (let k = 0; k < 5; k++) {
+                getBoard(i).children[j].children[k].style.backgroundColor = result[k];
+            }
+        }
+    }
+}
+
+function win() {
+    finished = true;
+    unhideAllHints();
+    updateBoardIndicators();
+}
+
+function lose() {
+    finished = true;
+    unhideAllHints();
+    updateBoardIndicators();
+}
+
 function enterPressed() {
     var guess = ['', '', '', '', ''];
     for (let i = 0; i < 5; i++) {
@@ -131,7 +187,6 @@ function enterPressed() {
     }
 
     var result = checkGuess(guess, answers[currentBoardi]);
-    console.log(result);
     for (let i = 0; i < 5; i++) {
         currentBoard.children[currentRow].children[i].style.backgroundColor = result[i];
     }
@@ -139,8 +194,15 @@ function enterPressed() {
     if (arraysEqual(result, ['green', 'green', 'green', 'green', 'green'])) {
         boardsSolved[currentBoardi] = true;
         if (boardsSolved[0] && boardsSolved[1] && boardsSolved[2]) {
-            alert('win');
+            win();
+            return;
         }
+        nextBoard();
+        return;
+    }
+
+    if (currentRow == 6 && !boardsSolved[currentBoardi]) {
+        boardsLost[currentBoardi] = true;
     }
 
     
@@ -148,7 +210,7 @@ function enterPressed() {
     nextBoard();
 
     if (currentRow == 7) {
-        alert('lose');
+        lose();
     }
 }
 
@@ -179,8 +241,10 @@ function checkGuess(guess, answer) {
 }
 
 function hideHints(boardi, rowi) {
-    for (let i = 0; i < 5; i++) {
-        getBoard(boardi).children[rowi].children[i].style.backgroundColor = 'black';
+    if (!finished) {
+        for (let i = 0; i < 5; i++) {
+            getBoard(boardi).children[rowi].children[i].style.backgroundColor = 'black';
+        }
     }
 }
 
