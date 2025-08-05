@@ -10,13 +10,19 @@ var currentCell = 0;
 
 var currentBoard = document.getElementById('board-l');
 
-var answers = ['LEMON', 'APPLE', 'SHOOT'];
+var answers = ["", "", ""];
 var boardsSolved = [false, false, false];
 var boardsLost = [false, false, false];
 
 var finished = false;
 
 var memoMillis = 3000;
+
+var textColourHex = "#fff";
+var greenHex = '#57ac78'
+var yellowHex = '#e9c601';
+var blackoutHex = '#303030'
+var bgHex = '#404040';
 
 
 function isAlpha(c) {
@@ -159,6 +165,7 @@ function unhideAllHints() {
 
             for (let k = 0; k < 5; k++) {
                 getBoard(i).children[j].children[k].style.backgroundColor = result[k];
+                getBoard(i).children[j].children[k].style.color = textColourHex;
             }
         }
     }
@@ -191,7 +198,7 @@ function enterPressed() {
         currentBoard.children[currentRow].children[i].style.backgroundColor = result[i];
     }
 
-    if (arraysEqual(result, ['green', 'green', 'green', 'green', 'green'])) {
+    if (arraysEqual(result, [greenHex, greenHex, greenHex, greenHex, greenHex])) {
         boardsSolved[currentBoardi] = true;
         if (boardsSolved[0] && boardsSolved[1] && boardsSolved[2]) {
             win();
@@ -222,7 +229,7 @@ function checkGuess(guess, answer) {
     // green
     for (let i = 0; i < 5; i++) {
         if (guessList[i] == answerList[i]) {
-            result[i] = 'green';
+            result[i] = greenHex;
             guessList[i] = '-';
             answerList[i] = '.';
         }
@@ -231,7 +238,7 @@ function checkGuess(guess, answer) {
     // yellow
     for (let i = 0; i < 5; i++) {
         if (answerList.includes(guessList[i])) {
-            result[i] = 'yellow';
+            result[i] = yellowHex;
             guessList[i] = '-';
             answerList[answerList.indexOf(guessList[i])] = '.';
         }
@@ -243,7 +250,9 @@ function checkGuess(guess, answer) {
 function hideHints(boardi, rowi) {
     if (!finished) {
         for (let i = 0; i < 5; i++) {
-            getBoard(boardi).children[rowi].children[i].style.backgroundColor = 'black';
+            getBoard(boardi).children[rowi].children[i].style.backgroundColor = blackoutHex;
+            getBoard(boardi).children[rowi].children[i].style.color = blackoutHex;
+
         }
     }
 }
